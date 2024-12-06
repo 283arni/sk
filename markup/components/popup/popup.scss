@@ -1,0 +1,129 @@
+.popup {
+    position: fixed;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 100;
+    background: rgba(var(--black-rgb), 0.3);
+    color: var(--black);
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    &.show {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.popup__wrapper {
+    position: relative;
+    max-width: 980px;
+    background: var(--yellow-white);
+    margin: 40px auto;
+    border-radius: 24px;
+    padding: 102px 60px 60px;
+
+}
+
+.popup__content {
+    h2 {
+        font-family: 'Zangezi';
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 72px;
+        margin-bottom: 24px;
+        font-stretch: condensed;
+        text-transform: uppercase;
+    }
+}
+
+.popup__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    svg {
+        transition: 0.5s;
+    }
+
+    &:hover {
+        svg {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.popup__block {
+    &:not(:last-of-type) {
+        margin-bottom: 36px;
+    }
+}
+
+.popup__text {
+    p {
+        font-family: Manrope;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+
+        &:not(:first-of-type) {
+            margin-top: 10px;
+        }
+    }
+}
+
+.popup__list {
+    li {
+        display: flex;
+        gap: 24px;
+
+        &:not(:first-of-type) {
+            margin-top: 24px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .popup {
+        padding: 6px;
+    }
+
+    .popup__wrapper {
+        margin: 0;
+        padding: 32px 20px;
+    }
+
+    .popup__content {
+        h2 {
+            line-height: 52px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    .popup__list {
+        li {
+            display: flex;
+            gap: 16px;
+    
+            &:not(:first-of-type) {
+                margin-top: 24px;
+            }
+        }
+    }
+
+    .popup__close {
+        top: 34px;
+        right: 24px;
+
+        svg{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
