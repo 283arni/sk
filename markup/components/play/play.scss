@@ -259,6 +259,10 @@
     .play__date {
         margin-top: 40px;
         flex-direction: column;
+
+        &::after {
+            display: none;
+        }
     }
 
     .play__date-block {
