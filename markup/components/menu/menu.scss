@@ -68,3 +68,16 @@
 .menu__btn {
     width: 100%;
 }
+
+@media (max-width: 767px) {
+    .menu__nav {
+        margin-top: 30px;
+    }
+
+    .menu__btn {
+        padding: 8px 12px 14px;
+        font-size: 1.375rem;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    }
+}

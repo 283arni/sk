@@ -1,12 +1,6 @@
 .play {
     display: flex;
-    align-items: center;
-
-    .garland {
-        bottom: -50px;
-        left: 50%;
-        transform: translateX(-50%) rotate(20deg);
-    }
+    padding-top: 105px;
 }
 
 .play__wrapper {
@@ -21,7 +15,7 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    right: 200px;
+    right: 212px;
 
     img {
         width: 100%;
@@ -67,7 +61,7 @@
 
 .play__info {
     h2 {
-        margin-top: 8px;
+        line-height: 82px;
     }
 
     h4 {
@@ -88,7 +82,7 @@
 }
 
 .play__content {
-    margin-top: 32px;
+    margin-top: 34px;
 
     p {
         font-size: 1.125rem;
@@ -96,7 +90,7 @@
         line-height: 24px;
 
         &:not(:first-of-type) {
-            margin-top: 10px;
+            margin-top: 12px;
         }
     }
 }
@@ -104,11 +98,23 @@
 .play__date {
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;
+    margin-top: 50px;
+    position: relative;
+
+
+    &::after {
+        content: '';
+        width: 48px;
+        height: 48px;
+        left: -58px;
+        top: -18px;
+        background: no-repeat center/cover url(%=static=%general/timelist.svg);
+        position: absolute;
+    }
 }
 
 .play__date-block {
-    width: 48%;
+    width: 48.2%;
 }
 
 .play__timetable {
@@ -126,6 +132,7 @@
 
     &:last-of-type {
         li {
+            padding: 6px 8px;
             background: var(--red);
         }
     }
@@ -133,7 +140,7 @@
     span {
         font-size: 0.875rem;
         font-weight: 500;
-        line-height: 18px;
+        line-height: 17px;
     }
 }
 
@@ -178,6 +185,8 @@
 
 @media (max-width: 767px) {
     .play {
+        padding-top: 46px;
+
         .garland {
             display: none;
         }
@@ -197,7 +206,7 @@
     }
 
     .play__info {
-        margin-top: 40px;
+        margin-top: 48px;
 
         h2,
         h3 {
@@ -216,6 +225,12 @@
 
     .play__kazan {
         display: none;
+        margin-top: 32px;
+
+        svg {
+            width: 36px;
+            height: 36px;
+        }
 
         span {
             font-size: 1rem;
@@ -230,9 +245,10 @@
     .play__control {
         display: none;
         justify-content: center;
+        margin-top: 43px;
 
         .btn {
-            width: 80%;
+            width: 88%;
         }
 
         &.play__control_mobile {
@@ -249,10 +265,12 @@
         width: auto;
 
         &:not(:first-of-type) {
-            margin-top: 24px;
+            margin-top: 40px;
         }
     }
-
+    .play__timetable {
+        margin-top: 10px;
+    }
     .play__list {
         li {
             font-size: 1.125rem;

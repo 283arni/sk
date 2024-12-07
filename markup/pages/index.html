@@ -9,20 +9,29 @@
 </head>
 <body class="body" id="body">
     %=symbols=%
-    {{> header/header }}
+    <div class="wrapper">
+        {{> header/header }}
 
-    <div class="main">
-        {{> hero/hero }}
-        {{> wait/wait }}
-        {{> play/play }}
-        {{> place/place }}
-        {{> partners/partners }}
-        {{> contacts/contacts }}
+        <div class="main">
+            {{> hero/hero }}
+            {{> wait/wait }}
+            {{> play/play }}
+            {{> place/place }}
+            {{> partners/partners }}
+            {{> contacts/contacts }}
+        </div>
+        {{> garland/garland className="garland-1"}}
+        {{> garland/garland className="garland-2"}}
+        {{> garland/garland className="garland-3"}}
+        {{> garland/garland className="garland-4"}}
+        {{> garland/garland className="garland-5"}}
+        {{> garland/garland className="garland-6"}}
+        {{> garland/garland className="garland-7"}}
+    
+        {{> rules/rules }}
+        {{> popup/popup }}
+        {{> menu/menu }}
     </div>
-
-    {{> rules/rules }}
-    {{> popup/popup }}
-    {{> menu/menu }}
     {{> assets/scripts }}
 </body>
 </html> 

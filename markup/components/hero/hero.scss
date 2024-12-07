@@ -1,6 +1,6 @@
 .hero {
+    padding-top: 200px;
     display: flex;
-    align-items: center;
 
     .garland {
         top: -130px;
@@ -48,7 +48,7 @@
 .hero__sk {
     display: flex;
     align-items: center;
-    margin-top: 138px;
+    margin-top: 134px;
 
     &.hero__sk_mobile {
         display: none;
@@ -63,15 +63,16 @@
 }
 
 .hero__info {
-    width: 60%;
+    width: 60.2%;
     background: no-repeat left top url(%=static=%general/bg_hero.svg);
+    padding: 120px 0 0;
 }
 
 .hero__list {
     display: flex;
-    gap: 24px;
+    gap: 27px;
     justify-content: flex-end;
-    padding: 120px 0 182px;
+    margin-bottom: 230px;
 
     li {
         display: flex;
@@ -79,7 +80,7 @@
         align-items: center;
         border: 2px solid var(--white);
         border-radius: 24px;
-        padding: 32px 16px 18px;
+        padding: 30px 22px 16px;
         background: var(--green);
     }
 
@@ -189,19 +190,13 @@
     }
 
     .hero__list {
-        padding: 50px 0 120px;
+        margin-bottom: 100px;
     }
 }
 
 @media (max-width: 767px) {
     .hero {
         padding-top: 166px;
-
-        .garland {
-            top: -30px;
-            left: 50%;
-            transform: rotate(20deg) translateX(-50%);
-        }
 
         .container {
             padding-right: 0;
@@ -229,9 +224,15 @@
         display: none;
         margin: 0;
 
+        svg {
+            width: 36px;
+            height: 36px;
+        }
+
         span {
             font-size: 1rem;
             line-height: 22px;
+            margin-left: 6px;
         }
 
         &.hero__sk_mobile {
@@ -242,6 +243,7 @@
 
     .hero__info-bottom {
         align-items: center;
+        margin-top: 25px;
         padding-right: 20px;
     }
 
@@ -251,18 +253,21 @@
     }
 
     .hero__info {
-        margin-top: 50px;
-        background-position: right top;
+        padding: 0;
+        background-position: right 12px;
+        margin: 28px 0 0; 
     }
 
     .hero__list {
         flex-direction: column;
         padding: 0;
-        gap: 12px;
+        gap: 13px;
+        margin: 0;
 
         li {
             width: 112px;
             padding: 16px 8px 5px;
+            border-radius: 12px;
 
             span {
                 &:first-of-type {

@@ -1,12 +1,6 @@
 .wait {
     display: flex;
-    align-items: center;
-
-    .garland {
-        right: 100px;
-        bottom: -100px;
-        transform: rotate(-20deg);
-    }
+    padding-top: 180px;
 }
 
 .wait__wrapper {
@@ -19,7 +13,7 @@
 .wait__kazan {
     display: flex;
     align-items: center;
-    margin-top: 430px;
+    margin-top: 295px;
 
     &.wait__kazan_mobile {
         display: none;
@@ -34,9 +28,11 @@
 }
 
 .wait__controls {
-    margin-top: 55px;
+    margin-top: 38px;
     display: flex;
     gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
 
     &.wait__controls_mobile {
         display: none;
@@ -45,10 +41,10 @@
 
 .wait__project {
     position: absolute;
-    right: 100px;
-    width: 1070px;
-    height: 623px;
-    background: no-repeat center url(%=static=%general/bg_gifts.svg);
+    right: 80px;
+    width: 1085px;
+    height: 640px;
+    background: no-repeat 255px center url(%=static=%general/bg_gifts.svg);
 }
 
 .wait__list {
@@ -81,34 +77,32 @@
 
 .wait__item_1 {
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 320px;
 }
 
 .wait__item_2 {
-    top: 200px;
-    left: 200px
+    top: 227px;
+    left: 260px
 }
 
 .wait__item_3 {
-    top: 250px;
-    right: 200px
+    top: 275px;
+    right: 280px
 }
 
 .wait__item_4 {
-    bottom: 200px;
+    bottom: 195px;
     left: 0;
 }
 
 .wait__item_5 {
-    bottom: 180px;
-    right: 0;
+    bottom: 185px;
+    right: 8px;
 }
 
 .wait__item_6 {
-    bottom: 100px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 108px;
+    left: 400px;
 }
 
 @media (max-width: 1365px) {
@@ -146,15 +140,18 @@
 
 @media (max-width: 767px) {
     .wait {
+        padding-top: 42px;
         overflow: hidden;
-
-        .garland {
-            display: none;
-        }
     }
 
     .wait__kazan {
         display: none;
+        margin-top: 30px;
+
+        svg {
+            width: 36px;
+            height: 36px;
+        }
         span {
             font-size: 1rem;
             line-height: 22px;
@@ -168,8 +165,9 @@
 
     .wait__controls {
         display: none;
+        margin-top:25px;
         flex-direction: column;
-        gap: 32px;
+        gap: 30px;
 
         &.wait__controls_mobile {
             display: flex;
@@ -177,14 +175,17 @@
     }
 
     .wait__project {
-        height: 400px;
-        background-size: auto 100%;
+        height: 384px;
+        background-position: center;
+        background-size: cover;
+        margin-top: 32px;
     }
 
     .wait__list {
         li {
             align-items: center;
             padding: 6px 12px;
+            border-radius: 12px;
 
             span {
                 font-size: 0.875rem;
@@ -199,25 +200,32 @@
     }
 
     .wait__item_2 {
-        top: 200px;
+        top: 165px;
+        right: auto;
+        left: -10px;
+    }
+
+    .wait__item_3 {
+        top: 220px;
         right: auto;
         left: 0;
     }
 
     .wait__item_4 {
         bottom: auto;
-        top: 100px;
-        right: 0;
+        top: 87px;
+        right: -10px;
         left: auto;
     }
 
     .wait__item_5 {
-        bottom: 30px;
+        right: -10px;
+        bottom: 48px;
     }
 
     .wait__item_6 {
-        bottom: 150px;
-        right: 0;
+        bottom: 164px;
+        right: -3px;
         left: auto;
         transform: none;
     }

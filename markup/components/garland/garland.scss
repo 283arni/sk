@@ -35,6 +35,46 @@
     animation: 6s lamp-8 infinite;
 }
 
+.garland-1 {
+    top: 40px;
+    right: 100px;
+}
+
+.garland-2 {
+    top: 776px;
+    left: 419px;
+    transform: rotate(25deg);
+}
+
+.garland-3 {
+    top: 1658px;
+    right: 88px;
+    transform: rotate(-20deg);
+}
+.garland-4 {
+    top: 2661px;
+    left: 469px;
+    transform: rotate(25deg);
+}
+
+.garland-5 {
+    top: 3725px;
+    right: 336px;
+    transform: rotate(-20deg);
+}
+
+.garland-6 {
+    top: 4548px;
+    left: 429px;
+    transform: rotate(25deg);
+}
+
+.garland-7 {
+    top: 5246px;
+    right: 408px;
+    transform: rotate(-5deg);
+}
+
 
 @keyframes lamp-1 {
     0% {
@@ -213,6 +253,8 @@
 }
 
 
+
+
 @media (max-width: 1365px) {
     .garland {
         width: 600px;
@@ -226,12 +268,33 @@
 
 @media (max-width: 767px) {
     .garland {
-        width: 383px;
-        height: 130px;
+        width: 400px;
+        height: 150px;
         
         svg {
             width: 100%;
             height: 100%;
         }
     }
+
+    .garland-1 {
+        top: 47px;
+        right: -20px;
+        transform: rotate(16deg);
+    }
+    
+    .garland-2,
+    .garland-3,
+    .garland-4,
+    .garland-5,
+    .garland-6 {
+        display: none;
+    }
+    
+    .garland-7 {
+        top: 4786px;
+        right: -25px;
+        transform: rotate(4deg);
+    }
+
 }
